@@ -18,11 +18,30 @@
 <resources>
 
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
-
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
     </style>
-
-    <style name="Theme.Bacon.Detail">
+    <style name="Theme.Bacon.Detail" parent="Theme.Bacon">
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
+    <style name="TextBodyStyle">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textColorLink">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/detail_body_text_size</item>
+        <item name="android:lineSpacingMultiplier">@fraction/detail_body_line_spacing_multiplier</item>
+    </style>
+
+    <style name="TextArticleTitle" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">4</item>
+    </style>
+
+    <style name="TextArticleSubtitle" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
 </resources>
