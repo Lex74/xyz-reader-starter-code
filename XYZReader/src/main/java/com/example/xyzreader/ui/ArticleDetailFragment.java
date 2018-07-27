@@ -1,6 +1,8 @@
 package com.example.xyzreader.ui;
 
 import android.annotation.SuppressLint;
+import android.graphics.drawable.Drawable;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager;
 import android.content.Intent;
